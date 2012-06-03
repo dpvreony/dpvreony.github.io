@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>github Pages Home - DPVreony</title>
-  </head>
-  <body>
+---
+title: Home
+layout: default
+---
     <h1>Welcome</h1>
     <h2>Introduction<h2>
     <p>This is the <a href="http://github.com">github page</a> for DPVreony. Github is where I will be placing concept work and documentation projects.  In the future it may be a mirror \ replacement for my codeplex projects. For <a href="http://www.dpvreony.co.uk">my main website and blog visit www.DPVreony.co.uk</a></p>
@@ -19,7 +16,6 @@
           <li><a href="http://dhgms-solutions.github.com/nucleotide/">Nucleotide</a></li>
           <li><a href="http://dhgms-solutions.github.com/tplhelper/">TPL Helper</a></li>
           <li><a href="http://dhgms-solutions.github.com/wsussmartapprove/">WSUS Smart Approve</a></li>
+        </ul>
       </li>
     </ul>
-  </body>
-</html>
