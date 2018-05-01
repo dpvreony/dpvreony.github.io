@@ -1,0 +1,9 @@
+- category : Build Automation
+  projects:
+    - name : caghav
+      owner : dpvreony
+      repo : caghav
+    - name : nucleotide
+      owner : dpvreony
+      repo : nucleotide
+    
