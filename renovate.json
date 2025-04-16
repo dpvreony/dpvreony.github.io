@@ -1,10 +1,22 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:base"
     ],
     "assigneesFromCodeOwners": true,
-        "packageRules": [{
+        "packageRules": [
+        {
+            "matchPackagePatterns": ["^Microsoft.*", "^System.*"],
+            "groupName": "all microsoft dependencies",
+            "groupSlug": "all-microsoft",
+            "labels": ["dependencies"]
+        },
+        {
+            "matchPackagePatterns": ["^AspNetCore.HealthChecks.*"],
+            "groupName": "all AspNetCore HealthChecks dependencies",
+            "groupSlug": "all-aspnetcore-healthchecks",
+            "labels": ["dependencies"]
+        },
+        {
             "matchPackagePatterns": ["^Audit.*"],
             "groupName": "all audit.net dependencies",
             "groupSlug": "all-audit-net",
@@ -29,9 +41,33 @@
             "labels": ["dependencies"]
         },
         {
-            "matchPackagePatterns": ["^Microsoft.*", "^System.*"],
-            "groupName": "all microsoft dependencies",
-            "groupSlug": "all-microsoft",
+            "matchPackagePatterns": ["^Microsoft.Fast.*"],
+            "groupName": "all microsoft FAST dependencies",
+            "groupSlug": "all-microsoft-fast",
+            "labels": ["dependencies"]
+        },
+        {
+            "matchPackagePatterns": ["^Microsoft.Identity.*"],
+            "groupName": "all microsoft identity dependencies",
+            "groupSlug": "all-microsoft-identity",
+            "labels": ["dependencies"]
+        },
+        {
+            "matchPackagePatterns": ["^Microsoft.NET.Test.*"],
+            "groupName": "all microsoft net test dependencies",
+            "groupSlug": "all-microsoft-net-test",
+            "labels": ["dependencies"]
+        },
+        {
+            "matchPackagePatterns": ["^NuGet.*"],
+            "groupName": "all nuget dependencies",
+            "groupSlug": "all-nuget",
+            "labels": ["dependencies"]
+        },
+        {
+            "matchPackagePatterns": ["^Octokit.*"],
+            "groupName": "all octokit dependencies",
+            "groupSlug": "all-octokit",
             "labels": ["dependencies"]
         },
         {
@@ -41,9 +77,21 @@
             "labels": ["dependencies"]
         },
         {
+            "matchPackagePatterns": ["^Microsoft.Reactive.*", "^System.Reactive", "^System.Reactive.*"],
+            "groupName": "all reactive extensions",
+            "groupSlug": "all-rx",
+            "labels": ["dependencies"]
+        },
+        {
             "matchPackagePatterns": ["^ReactiveUI.*"],
             "groupName": "all reactiveui dependencies",
             "groupSlug": "all-reactiveui",
+            "labels": ["dependencies"]
+        },
+        {
+            "matchPackagePatterns": ["^Whipstaff.*"],
+            "groupName": "all whipstaff dependencies",
+            "groupSlug": "all-whipstaff",
             "labels": ["dependencies"]
         },
         {
